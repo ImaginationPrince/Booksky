@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1>Booksky</h1>
+    </nav>
+    <article id="container">
+        <section id="book-container">
+            <h1>Think And Grow Rich</h1>
+            <h5>Nepolian Hill</h5>
+            <p>
+                "The starting of all achievements is desire"
+                "The way of success is The way of continous pursuit knowledge"</p>
+            <button onclick="deletebook(event)" id="delete-button">Delete</button>
+        </section>
+
+    </article>
+    <section id="popup-overlay"></section>
+    <section id="popup-box">
+        <h2><em>Add Book</em></h2>
+        <form>
+            <input type="text" placeholder="Enter Book name" id="book-title-input" >
+            <input type="text" placeholder="Enter Author name" id="book-author-input" >
+            <textarea placeholder="Enter description" id="book-description-input"></textarea>
+
+            <button id="add-book">Add</button>
+            <button  id="cancel-popup">Cancel</button>
+        </form>
+    </section>
+
+    <button id="add-container">+</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
